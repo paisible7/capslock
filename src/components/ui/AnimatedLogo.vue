@@ -4,7 +4,23 @@
       src="@/assets/capslocklogo.png"
       alt="Mon logo"
       :class="`w-full h-full object-contain ${isAnimating ? 'animate-pulse' : ''}`"
-    /> --> </div>
+    /> --> 
+    
+
+    <!-- Logo pour le thème clair -->
+    <img
+      src="@/assets/images/light.png"
+      alt="Logo clair"
+      :class="`block dark:hidden w-full h-full object-contain ${isAnimating ? 'animate-pulse' : ''}`"
+    />
+    <!-- Logo pour le thème sombre -->
+    <img
+      src="@/assets/images/dark.png"
+      alt="Logo sombre"
+      :class="`hidden dark:block w-full h-full object-contain ${isAnimating ? 'animate-pulse' : ''}`"
+    />
+
+    </div>
 </template>
 
 <script>
