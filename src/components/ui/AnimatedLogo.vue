@@ -57,3 +57,11 @@ export default {
 }
 </script>
 
+<style scoped >
+
+img {
+transform: scale(2.0);
+}
+
+</style>
+
