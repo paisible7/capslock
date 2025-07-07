@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
   theme: {
@@ -15,15 +15,15 @@ export default {
         }
       },
       keyframes: {
-        'fadeIn':
+        'fade-in':
           {'0%': { opacity: '0', transform: 'translateY(20px)'},
           '100%': { opacity: '1', transform: 'translateY(0)'},
         },
-        'scaleIn': {
+        'scale-in': {
           '0%': { transform: 'scale(0.9)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' }
         },
-        'slideUp': {
+        'slide-up': {
           '0%': { transform: 'translateY(30px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' }
         },
