@@ -108,7 +108,7 @@ export default {
     const isMobileMenuOpen = ref(false)
 
     const navLinks = [
-      { name: 'Accueil', href: '#hero' },
+      { name: 'Accueil', href: '/' },
       { name: 'Services', href: '#services' },
       { name: 'Projets', href: '#projects' },
       { name: 'À propos', href: '/about' },
