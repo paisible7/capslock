@@ -1,8 +1,6 @@
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <NavbarComponent />
-
     <main class="flex-1 pt-20">
       <!-- Header -->
       <section class="bg-gradient-to-br from-capslock-navy via-blue-700 to-blue-800 dark:from-blue-600 dark:via-blue-700 dark:to-blue-900 text-white section-spacing">
@@ -153,7 +151,6 @@
       </section>
     </main>
 
-    <FooterComponent />
   </div>
 </template>
 

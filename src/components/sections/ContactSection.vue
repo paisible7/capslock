@@ -1,6 +1,5 @@
 
 <template>
-  <NavbarComponent />
   <section id="contact" class="section-spacing bg-gray-50 dark:bg-gray-800">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -79,7 +78,6 @@
       </div>
     </div>
   </section>
-  <FooterComponent />
 
 </template>
 

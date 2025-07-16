@@ -6,9 +6,12 @@
 
     <!-- contenu -->
     <div v-else>
+      <NavbarComponent />
       <ScrollIndicator />
       <FloatingElements />
       <router-view />
+      <FooterComponent />
+
     </div>
   </div>
 </template>
@@ -19,10 +22,14 @@ import { useThemeStore } from './stores/theme'
 import LoaderComponent from './components/ui/LoaderComponent.vue'
 import ScrollIndicator from './components/ui/ScrollIndicator.vue'
 import FloatingElements from './components/ui/FloatingElements.vue'
+import FooterComponent from "@/components/layout/FooterComponent.vue";
+import NavbarComponent from "@/components/layout/NavbarComponent.vue";
 
 export default {
   name: 'App',
   components: {
+    NavbarComponent,
+    FooterComponent,
     LoaderComponent,
     ScrollIndicator,
     FloatingElements

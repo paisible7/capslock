@@ -8,7 +8,6 @@
       <!-- <ProjectsSection /> -->
       <ContactSection />
     </main>
-    <FooterComponent />
   </div>
 </template>
 

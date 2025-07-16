@@ -1,7 +1,6 @@
 
 <template>
   <div class="min-h-screen">
-    <NavbarComponent />
     <main class="pt-20">
       <section class="section-spacing bg-white dark:bg-gray-900">
         <div class="container mx-auto px-4">
@@ -59,7 +58,6 @@
         </div>
       </section>
     </main>
-    <FooterComponent />
   </div>
 </template>
 
