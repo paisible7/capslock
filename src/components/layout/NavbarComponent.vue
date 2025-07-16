@@ -37,9 +37,8 @@
           </a>
           <ThemeToggle />
           <a
-            href="#contact"
-            @click="scrollToSection('#contact')"
-            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 hover-lift shadow-md hover:shadow-lg opacity-0 animate-fade-in animation-delay-500"
+            href="/contact"
+            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 transition-all duration-300 hover-lift shadow-md hover:shadow-lg opacity-0 animate-fade-in animation-delay-500"
           >
             Commencer un projet
           </a>
@@ -49,7 +48,7 @@
         <div class="md:hidden flex items-center space-x-2">
           <ThemeToggle />
           <button
-            class="text-gray-700 dark:text-gray-300 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-300"
+            class="text-gray-700 dark:text-gray-300 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-300"
             @click="toggleMenu"
             aria-label="Toggle menu"
           >
@@ -81,7 +80,7 @@
           </a>
           <a
             href="#contact"
-            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 text-center opacity-0 animate-fade-in animation-delay-400"
+            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 transition-all duration-300 text-center opacity-0 animate-fade-in animation-delay-400"
             @click="handleMobileClick('#contact')"
           >
             Commencer un projet
@@ -109,10 +108,10 @@ export default {
 
     const navLinks = [
       { name: 'Accueil', href: '/' },
-      { name: 'Services', href: '#services' },
-      { name: 'Projets', href: '#projects' },
+      { name: 'Services', href: '/services' },
+      //{ name: 'Projets', href: '#projects' },
       { name: 'À propos', href: '/about' },
-      { name: 'Contact', href: '#contact' },
+      { name: 'Contact', href: '/contact' },
     ]
 
     const handleScroll = () => {

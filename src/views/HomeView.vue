@@ -4,7 +4,8 @@
     <main>
       <HomeSection />
       <ServicesSection />
-      <ProjectsSection />
+      <!-- pour plus tard -->
+      <!-- <ProjectsSection /> -->
       <ContactSection />
     </main>
     <FooterComponent />
@@ -16,7 +17,7 @@ import NavbarComponent from "@/components/layout/NavbarComponent.vue"
 import FooterComponent from '@/components/layout/FooterComponent.vue'
 import HomeSection from '@/components/sections/HomeSection.vue'
 import ServicesSection from '@/components/sections/ServicesSection.vue'
-import ProjectsSection from '@/components/sections/ProjectsSection.vue'
+//import ProjectsSection from '@/components/sections/ProjectsSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
 
 export default {
@@ -26,7 +27,7 @@ export default {
     FooterComponent,
     HomeSection: HomeSection,
     ServicesSection,
-    ProjectsSection,
+    //ProjectsSection,
     ContactSection
   }
 }

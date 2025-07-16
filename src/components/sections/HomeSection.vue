@@ -28,14 +28,14 @@
             <a
               href="#services"
               @click="scrollToSection('#services')"
-              class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-lg hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-capslock-navy/20 dark:hover:shadow-blue-500/20"
+              class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-capslock-navy/20 dark:hover:shadow-blue-500/20"
             >
               Découvrir nos services
             </a>
             <a
               href="#contact"
               @click="scrollToSection('#contact')"
-              class="px-6 py-3 bg-white dark:bg-gray-800 text-capslock-navy dark:text-blue-300 border border-capslock-navy dark:border-blue-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
+              class="px-6 py-3 bg-white dark:bg-gray-800 text-capslock-navy dark:text-blue-300 border border-capslock-navy dark:border-blue-600 rounded-full hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
             >
               Contactez-nous
             </a>

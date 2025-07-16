@@ -145,7 +145,7 @@
           </p>
           <router-link
             to="/#contact"
-            class="inline-block px-8 py-4 bg-white text-capslock-navy font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 hover-scale opacity-0 animate-fade-in delay-400"
+            class="inline-block px-8 py-4 bg-white text-capslock-navy font-bold rounded-full hover:bg-gray-100 transition-all duration-300 hover-scale opacity-0 animate-fade-in delay-400"
           >
             Démarrer un projet
           </router-link>

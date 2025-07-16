@@ -2,7 +2,7 @@
 <template>
   <button
     @click="themeStore.toggleTheme"
-    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+    class="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
     aria-label="Basculer le thème"
   >
     <Sun v-if="themeStore.isDarkMode" class="w-5 h-5 text-yellow-500" />

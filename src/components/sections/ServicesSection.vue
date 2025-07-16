@@ -1,4 +1,5 @@
 <template>
+  <NavbarComponent />
   <section id="services" class="section-spacing bg-gray-50 dark:bg-gray-800">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -26,21 +27,27 @@
         <a
           href="#contact"
           @click="scrollToSection('#contact')"
-          class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-lg hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg inline-block"
+          class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg inline-block"
         >
           Discuter de votre projet
         </a>
       </div>
     </div>
   </section>
+  <FooterComponent />
+
 </template>
 
 <script>
 import ServiceCard from '../ui/ServiceCard.vue'
+import FooterComponent from "@/components/layout/FooterComponent.vue";
+import NavbarComponent from "@/components/layout/NavbarComponent.vue";
 
 export default {
   name: 'ServicesSection',
   components: {
+    NavbarComponent,
+    FooterComponent,
     ServiceCard
   },
   setup() {

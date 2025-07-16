@@ -4,7 +4,7 @@
     <!-- Loader -->
     <LoaderComponent v-if="isLoading" @complete="handleLoadComplete" />
 
-    <!-- App Content -->
+    <!-- contenu -->
     <div v-else>
       <ScrollIndicator />
       <FloatingElements />
@@ -46,5 +46,4 @@ export default {
     }
   }
 }
-
 </script>
