@@ -1,35 +1,85 @@
-# capslocksite
+<img src="./src/assets/images/IMG-20250329-WA0008.jpg" alt="Logo" width="100%" />
 
-This template should help get you started developing with Vue 3 in Vite.
+---
+## 📦 Tech Stack :
 
-## Recommended IDE Setup
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Pinia](https://img.shields.io/badge/pinia-%23FFE873.svg?style=for-the-badge&logo=pinia&logoColor=black)
+![Lucide](https://img.shields.io/badge/lucide-%23000000.svg?style=for-the-badge&logo=lucide&logoColor=white)
+![EmailJS](https://img.shields.io/badge/emailjs-%230074ff.svg?style=for-the-badge&logo=emailjs&logoColor=white)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🚀 Installation
 
-## Project Setup
+### 1. Cloner le dépôt
 
-```sh
+```bash
+git clone https://github.com/Capslock-org/PORTFOLIO.git
+cd PORTFOLIO
+```
+
+### 2. Installer les dépendances
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
+## 🔧 Scripts disponibles
+
+| Commande         | Description                                  |
+|------------------|----------------------------------------------|
+| `npm run dev`    | Lance le serveur de développement local       |
+| `npm run build`  | Crée une version de production du projet      |
+| `npm run preview`| Prévisualise la version de production localement |
+| `npm run lint`   | Corrige automatiquement les erreurs ESLint    |
+| `npm run format` | Formate le code avec Prettier (`src/` uniquement) |
+
+---
+
+## 🛠 Technologies utilisées
+
+- **Vue 3** – Framework JavaScript principal
+- **Vite** – Outil de build rapide
+  -     npm install -g @vue/cli
+- **Tailwind CSS 3** – Framework CSS utilitaire
+  -     npm install tailwindcss@3 postcss autoprefixer
+
+- **Pinia** – Gestion d'état pour Vue
+- **Vue Router** – Système de routing
+  -     npm install vue-router@4 pinia
+- **EmailJS** – Envoi d'emails directement depuis le frontend
+  -     npm install emailjs-com
+- **Lucide Vue** – Icônes modernes
+  -     npm install lucide-vue-next  
+- **ESLint & Prettier** – Linting et formatage du code
+
+---
+
+## 📁 Structure du projet
+
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+PORTFOLIO/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── views/
+│   ├── router/
+│   ├── store/
+│   └── main.js
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
 ```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## 📄 Licence
 
-```sh
-npm run lint
-```
+Ce projet est privé. Contacte l’auteur pour plus d’informations.
