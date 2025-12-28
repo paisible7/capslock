@@ -7,7 +7,7 @@
 
 ## Liens
 - **Type:** web
-- **Demo:** https://paisible.tech
+- **Demo:** https://capslock.site
 
 ## Stack Technique
 * **Framework:** Vue.js 3
