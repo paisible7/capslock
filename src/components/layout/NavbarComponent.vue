@@ -1,4 +1,3 @@
-
 <template>
   <nav
     :class="`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -14,7 +13,9 @@
           <div class="group-hover:rotate-12 transition-transform duration-500">
             <AnimatedLogo />
           </div>
-          <span class="font-bold text-xl text-capslock-navy dark:text-blue-400 transition-colors duration-300">
+          <span
+            class="font-bold text-xl text-capslock-navy dark:text-blue-400 transition-colors duration-300"
+          >
             capslock
           </span>
         </router-link>
@@ -33,12 +34,14 @@
               {{ link.name }}
             </router-link>
             <span v-else>{{ link.name }}</span>
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-capslock-navy dark:bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-capslock-navy dark:bg-blue-400 transition-all duration-300 group-hover:w-full"
+            ></span>
           </a>
           <ThemeToggle />
           <a
             href="/contact"
-            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 transition-all duration-300 hover-lift shadow-md hover:shadow-lg opacity-0 animate-fade-in animation-delay-500"
+            class="px-6 py-3 bg-capslock-navy dark:bg-capslock-navy text-white rounded-full hover:bg-opacity-90 transition-all duration-300 hover-lift shadow-md hover:shadow-lg opacity-0 animate-fade-in animation-delay-500"
           >
             Commencer un projet
           </a>
@@ -52,11 +55,27 @@
             @click="toggleMenu"
             aria-label="Toggle menu"
           >
-            <svg v-if="!isMobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <svg
+              v-if="!isMobileMenuOpen"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
             <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -64,7 +83,9 @@
 
       <!-- Menu Mobile Déroulant -->
       <div v-if="isMobileMenuOpen" class="md:hidden mt-4 pb-4 animate-slide-up">
-        <div class="flex flex-col space-y-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-xl p-6 shadow-xl">
+        <div
+          class="flex flex-col space-y-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-xl p-6 shadow-xl"
+        >
           <a
             v-for="(link, index) in navLinks"
             :key="link.name"
@@ -80,7 +101,7 @@
           </a>
           <a
             href="#contact"
-            class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 transition-all duration-300 text-center opacity-0 animate-fade-in animation-delay-400"
+            class="px-6 py-3 bg-capslock-navy dark:bg-capslock-navy text-white rounded-full hover:bg-opacity-90 transition-all duration-300 text-center opacity-0 animate-fade-in animation-delay-400"
             @click="handleMobileClick('#contact')"
           >
             Commencer un projet
@@ -100,7 +121,7 @@ export default {
   name: 'NavbarComponent',
   components: {
     AnimatedLogo,
-    ThemeToggle
+    ThemeToggle,
   },
   setup() {
     const isScrolled = ref(false)
@@ -152,8 +173,8 @@ export default {
       navLinks,
       toggleMenu,
       scrollToSection,
-      handleMobileClick
+      handleMobileClick,
     }
-  }
+  },
 }
 </script>

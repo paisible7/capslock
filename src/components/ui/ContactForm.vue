@@ -1,4 +1,3 @@
-
 <template>
   <form @submit.prevent="handleSubmit" class="space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -11,7 +10,7 @@
           required
           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-capslock-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-700 dark-text transition-colors"
           placeholder="Votre nom complet"
-        >
+        />
       </div>
       <div>
         <label for="email" class="block text-sm font-medium dark-text mb-2">Email *</label>
@@ -22,7 +21,7 @@
           required
           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-capslock-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-700 dark-text transition-colors"
           placeholder="votre@email.com"
-        >
+        />
       </div>
     </div>
 
@@ -35,10 +34,12 @@
           type="tel"
           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-capslock-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-700 dark-text transition-colors"
           placeholder="+243 XXX XXX XXX"
-        >
+        />
       </div>
       <div>
-        <label for="service" class="block text-sm font-medium dark-text mb-2">Service souhaité</label>
+        <label for="service" class="block text-sm font-medium dark-text mb-2"
+          >Service souhaité</label
+        >
         <select
           id="service"
           v-model="form.service"
@@ -73,32 +74,55 @@
         type="checkbox"
         required
         class="h-4 w-4 text-capslock-navy dark:text-blue-400 focus:ring-capslock-navy dark:focus:ring-blue-400 border-gray-300 dark:border-gray-600 rounded"
-      >
+      />
       <label for="consent" class="ml-2 text-sm dark-text-muted">
         J'accepte d'être contacté par Capslock concernant ma demande *
       </label>
     </div>
 
     <!-- Status Messages -->
-    <div v-if="contactStore.status === 'success'" class="p-4 bg-green-50 dark:bg-green-900/50 border border-green-200 dark:border-green-800 rounded-lg">
+    <div
+      v-if="contactStore.status === 'success'"
+      class="p-4 bg-green-50 dark:bg-green-900/50 border border-green-200 dark:border-green-800 rounded-lg"
+    >
       <p class="text-green-800 dark:text-green-300">✅ Message envoyé avec succès !</p>
     </div>
 
-    <div v-if="contactStore.status === 'error'" class="p-4 bg-red-50 dark:bg-red-900/50 border border-red-200 dark:border-red-800 rounded-lg">
+    <div
+      v-if="contactStore.status === 'error'"
+      class="p-4 bg-red-50 dark:bg-red-900/50 border border-red-200 dark:border-red-800 rounded-lg"
+    >
       <p class="text-red-800 dark:text-red-300">❌ Erreur lors de l'envoi du message.</p>
     </div>
-    <div class="w-full flex justify-center items-center md:justify-center md:items-center ">
-    <button
-      type="submit"
-      :disabled="contactStore.isLoading"
-      class="w-full md:w-2/4 px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-    >
-      <svg v-if="contactStore.isLoading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-      </svg>
-      {{ contactStore.isLoading ? 'Envoi en cours...' : 'Envoyer le message' }}
-    </button></div>
+    <div class="w-full flex justify-center items-center md:justify-center md:items-center">
+      <button
+        type="submit"
+        :disabled="contactStore.isLoading"
+        class="w-full md:w-2/4 px-6 py-3 bg-capslock-navy dark:bg-capslock-navy text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+      >
+        <svg
+          v-if="contactStore.isLoading"
+          class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+        {{ contactStore.isLoading ? 'Envoi en cours...' : 'Envoyer le message' }}
+      </button>
+    </div>
   </form>
 </template>
 
@@ -117,7 +141,7 @@ export default {
       phone: '',
       service: '',
       message: '',
-      consent: false
+      consent: false,
     })
 
     const handleSubmit = async () => {
@@ -126,7 +150,7 @@ export default {
 
         if (result.success) {
           // Reset form
-          Object.keys(form).forEach(key => {
+          Object.keys(form).forEach((key) => {
             if (key === 'consent') {
               form[key] = false
             } else {
@@ -135,15 +159,15 @@ export default {
           })
         }
       } catch (error) {
-        console.error('Erreur lors de l\'envoi:', error)
+        console.error("Erreur lors de l'envoi:", error)
       }
     }
 
     return {
       form,
       contactStore,
-      handleSubmit
+      handleSubmit,
     }
-  }
+  },
 }
 </script>

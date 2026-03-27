@@ -28,7 +28,7 @@
             <a
               href="#services"
               @click="scrollToSection('#services')"
-              class="px-6 py-3 bg-capslock-navy dark:bg-blue-600 text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-capslock-navy/20 dark:hover:shadow-blue-500/20"
+              class="px-6 py-3 bg-capslock-navy dark:bg-capslock-navy text-white rounded-full hover:bg-opacity-90 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-capslock-navy/20 dark:hover:shadow-blue-500/20"
             >
               Découvrir nos services
             </a>
