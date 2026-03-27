@@ -1,35 +1,71 @@
-# capslocksite
+# Capslock Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+<img src="https://capslock.site/assets/IMG-20250329-WA0008-C1xQH2Qj.jpg" alt="Logo" width="100%" />
 
-## Recommended IDE Setup
+## Description
+> Portfolio professionnel développé pour l'organisation Capslock. Cette plateforme présente les réalisations et expertises techniques via une interface réactive et performante.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Liens
+- **Type:** web
+- **Demo:** https://capslock.site
 
-## Customize configuration
+## Stack Technique
+* **Framework:** Vue.js 3
+* **Outil de build:** Vite
+* **Style:** Tailwind CSS 3
+* **Gestion d'état:** Pinia
+* **Communication:** EmailJS
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Installation
 
-## Project Setup
+### 1. Cloner le dépôt
+```bash
+git clone https://github.com/paisible7/capslock.git
+cd capslock
+```
 
-```sh
+### 2. Installer les dépendances
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Scripts disponibles
 
-```sh
-npm run dev
+| Commande | Description |
+|----------|-------------|
+| `npm run dev` | Lance le serveur de développement local |
+| `npm run build` | Crée une version de production du projet |
+| `npm run preview` | Prévisualise la version de production localement |
+| `npm run lint` | Corrige automatiquement les erreurs ESLint |
+| `npm run format` | Formate le code avec Prettier (src uniquement) |
+
+## Technologies utilisées
+
+- **Vue 3** : Framework JavaScript principal
+- **Vite** : Outil de build rapide
+- **Tailwind CSS 3** : Framework CSS utilitaire
+- **Pinia** : Gestion d'état pour Vue
+- **Vue Router** : Système de routage
+- **EmailJS** : Envoi d'emails directement depuis le frontend
+- **Lucide Vue** : Bibliothèque d'icônes modernes
+- **ESLint & Prettier** : Qualité et formatage du code
+
+## Structure du projet
+
+```
+PORTFOLIO/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── views/
+│   ├── router/
+│   ├── store/
+│   └── main.js
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## Licence
+Ce projet est privé. Contactez l'auteur pour plus d'informations.
